@@ -1,5 +1,17 @@
 const fs = require('fs')
 const path = require('path')
+const jsdom = require('mocha-jsdom');
+
+// Initiate jsdom with your configurations
+jsdom({
+    url: "http://localhost",
+    skipWindowCheck: true
+});
+
+// Mock localStorage
+global.window = {}
+require('mock-local-storage')
+window.localStorage = global.localStorage
 
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
 

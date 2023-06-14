@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-14T14:44:33.654Z",
+    "end": "2023-06-14T14:44:33.658Z",
+    "duration": 4
+  },
+  "tests": [],
+  "pending": [],
+  "failures": [
+    {
+      "title": "\"before all\" hook in \"{root}\"",
+      "fullTitle": "\"before all\" hook in \"{root}\"",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: mocha-jsdom: already a browser environment, or mocha-jsdom invoked twice. use 'skipWindowCheck' to disable this check.\n    at Context.<anonymous> (node_modules/mocha-jsdom/index.js:48:13)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "mocha-jsdom: already a browser environment, or mocha-jsdom invoked twice. use 'skipWindowCheck' to disable this check.",
+        "multiple": [
+          {
+            "multiple": "Error: mocha-jsdom: already a browser environment, or mocha-jsdom invoked twice. use 'skipWindowCheck' to disable this check."
+          }
+        ]
+      }
+    }
+  ],
+  "passes": []
+}
